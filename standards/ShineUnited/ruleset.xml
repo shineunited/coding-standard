@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<ruleset name="ShineUnited">
+	<description>Shine United - Coding Standard</description>
+
+	<arg name="tab-width" value="4" />
+
+	<!-- PSR12 Standards -->
+	<rule ref="PSR12">
+		<exclude name="Generic.WhiteSpace.DisallowTabIndent" />
+		<exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine" />
+		<exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine" />
+		<exclude name="PSR12.Classes.OpeningBraceSpace" />
+	</rule>
+
+	<!-- Code MUST use an indent of 1 tab, and MUST NOT use spaces for indenting. -->
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent" />
+	<rule ref="Generic.WhiteSpace.ScopeIndent">
+		<properties>
+			<property name="indent" value="4" />
+			<property name="tabIndent" value="true" />
+		</properties>
+	</rule>
+
+	<!-- The opening brace for the class MUST go on the same line -->
+	<rule ref="Generic.Classes.OpeningBraceSameLine" />
+
+	<!-- The opening brace for the function MUST go on the same line -->
+	<rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie" />
+
+	<!-- All constructors MUST use __construct() rather than ClassName() -->
+	<rule ref="Generic.NamingConventions.ConstructorName" />
+
+	<!-- Check for duplicated class names -->
+	<rule ref="Generic.Classes.DuplicateClassName" />
+
+	<!-- All PHP files MUST use the Unix LF (linefeed) line ending. -->
+	<rule ref="Generic.Files.LineEndings">
+		<properties>
+			<property name="eolChar" value="\n"/>
+		</properties>
+	</rule>
+</ruleset>

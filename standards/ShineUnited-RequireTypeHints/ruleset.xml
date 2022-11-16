@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<ruleset name="ShineUnited-RequireTypeHints">
+	<description>Shine United - Require Type Hints</description>
+
+	<!-- All function parameters MUST be type hinted -->
+	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHint">
+		<exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessAnnotation" />
+		<exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.UselessSuppress" />
+		<exclude name="SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingTraversableTypeHintSpecification" />
+	</rule>
+	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing" />
+
+	<!-- All return types MUST be type hinted -->
+	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
+		<exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessAnnotation" />
+		<exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.UselessSuppress" />
+		<exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification" />
+	</rule>
+	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing" />
+
+	<!-- All properties MUST be type hinted -->
+	<rule ref="SlevomatCodingStandard.TypeHints.PropertyTypeHint">
+		<exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.UselessAnnotation" />
+		<exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.UselessSuppress" />
+		<exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification" />
+	</rule>
+
+	<!-- Constants MUST NOT have type hints -->
+	<rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint" />
+</ruleset>

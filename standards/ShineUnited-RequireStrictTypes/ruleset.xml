@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ruleset name="ShineUnited-RequireStrictTypes">
+	<description>Shine United - Require Strict Types</description>
+
+	<!-- All PHP files MUST declare strict_types=1 -->
+	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+		<properties>
+			<property name="spacesCountAroundEqualsSign" value="0" />
+		</properties>
+	</rule>
+</ruleset>

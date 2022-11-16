@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<ruleset name="ShineUnited-RequireComments">
+	<description>Shine United - Require Comments</description>
+
+	<!-- All files MUST have a docblock -->
+	<rule ref="Squiz.Commenting.FileComment">
+		<exclude name="Squiz.Commenting.FileComment.SpacingAfterOpen" />
+		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag" />
+	</rule>
+
+	<!-- All functions declared public or protected MUST be have a docblock -->
+	<rule ref="Squiz.Commenting.FunctionComment">
+		<properties>
+			<property name="minimumVisibility" value="protected" />
+			<property name="skipIfInheritdoc" value="true" />
+		</properties>
+	</rule>
+
+	<!-- Function comments MUST have a throw tag if they throw an exception -->
+	<rule ref="Squiz.Commenting.FunctionCommentThrowTag" />
+
+	<!-- All class MUST be have a docblock -->
+	<rule ref="Squiz.Commenting.ClassComment" />
+</ruleset>
