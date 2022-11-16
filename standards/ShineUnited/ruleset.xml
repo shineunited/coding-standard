@@ -40,11 +40,4 @@
 
 	<!-- Check for duplicated class names -->
 	<rule ref="Generic.Classes.DuplicateClassName" />
-
-	<!-- All PHP files MUST use the Unix LF (linefeed) line ending. -->
-	<rule ref="Generic.Files.LineEndings">
-		<properties>
-			<property name="eolChar" value="\n"/>
-		</properties>
-	</rule>
 </ruleset>
