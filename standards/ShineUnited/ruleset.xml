@@ -12,10 +12,11 @@
 		<exclude name="PSR12.Classes.OpeningBraceSpace" />
 	</rule>
 
-	<!-- Expand line length limit to 160 -->
+	<!-- Expand line length limit to 160 and ignore limit on comments -->
 	<rule ref="Generic.Files.LineLength">
 		<properties>
 			<property name="lineLimit" value="160" />
+			<property name="ignoreComments" value="true" />
 		</properties>
 	</rule>
 
