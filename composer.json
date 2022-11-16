@@ -1,0 +1,10 @@
+{
+	"name": "shineunited/coding-standard",
+	"license": "MIT",
+	"type": "phpcodesniffer-standard",
+	"require": {
+		"squizlabs/php_codesniffer": "^3.7",
+		"slevomat/coding-standard": "^8.6",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"
+	}
+}
