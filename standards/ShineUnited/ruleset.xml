@@ -12,6 +12,13 @@
 		<exclude name="PSR12.Classes.OpeningBraceSpace" />
 	</rule>
 
+	<!-- Expand line length limit to 160 -->
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+			<property name="lineLimit" value="160" />
+		</properties>
+	</rule>
+
 	<!-- Code MUST use an indent of 1 tab, and MUST NOT use spaces for indenting. -->
 	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent" />
 	<rule ref="Generic.WhiteSpace.ScopeIndent">
