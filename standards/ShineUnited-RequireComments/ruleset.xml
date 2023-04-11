@@ -16,9 +16,6 @@
 		</properties>
 	</rule>
 
-	<!-- Function comments MUST have a throw tag if they throw an exception -->
-	<rule ref="Squiz.Commenting.FunctionCommentThrowTag" />
-
 	<!-- All classes MUST be have a docblock -->
 	<rule ref="Squiz.Commenting.ClassComment" />
 </ruleset>
